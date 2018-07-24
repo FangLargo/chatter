@@ -48,7 +48,7 @@ public class ChatterClient {
 		client.setKeepAliveTCP(300);
 		new Thread (client).start();
 		
-		client.discoverHost(8487, 10000);
+		//client.discoverHost(8487, 10000);
 		
 		client.connect(500000, client.discoverHost(8487, 10000), 8486, 8487);
 	}
